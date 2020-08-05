@@ -1,0 +1,33 @@
+<div class="cover">
+    <header>
+        <nav>
+            <mat-toolbar fxLayout>
+                <a routerLink="/">
+                    <img class="logo" src="assets/images/logo-quiz.png" alt="logo quiz">
+                </a>
+                <ul fxHide.xs>
+                    <li><a routerLink="/register">Register</a></li>
+                    <li><a routerLink="/login">Login</a></li>
+                </ul>
+                <div fxHide.gt-xs class="menu">
+                    <button type="button" mat-icon-button (click)="onSidenavClose()">
+                        <mat-icon>menu</mat-icon>
+                    </button>
+                </div>
+            </mat-toolbar>
+        </nav>
+    </header>
+    <div class="attention">
+        <img class="quiz-friends" src="assets/images/quiz-friends.png" alt="quiz friends">
+        <div class="wrapper" fxFlex fxLayout="column" fxLayoutAlign="space-between center">
+            <h1 class="mat-display-3">The most exciting Quiz Web App to play</h1>
+            <div class="mat-h2">Play with your friends and test your knowledge</div>
+            <button class="play" type="button" mat-raised-button>REGISTER NOW</button>
+            <div class="scroll-down">
+                <button class="down-button" type="button" mat-mini-fab>
+                    <mat-icon>arrow_downward</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

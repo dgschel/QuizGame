@@ -1,0 +1,13 @@
+<div *ngIf="quiz">
+    <div>
+        <h2>{{quiz.question}}</h2>
+    </div>
+    <div>
+        <mat-radio-group aria-label="Wähle eine möglichkeit" (change)="onChange($event)">
+            <mat-radio-button *ngFor="let choice of quiz.choices" [value]="choice">{{ choice }}</mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <div>
+        <span>Answer: {{ match }}</span>
+    </div>
+</div>

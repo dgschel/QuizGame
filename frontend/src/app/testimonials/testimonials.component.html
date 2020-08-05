@@ -1,0 +1,15 @@
+<section>
+    <h2 class="mat-display-1">What our players say</h2>
+    <img src="assets/images/quotes.svg" alt="">
+    <div class="carousel">
+        <ngu-carousel #carousel [inputs]=" carouselConfig" [dataSource]="testimonials">
+            <div *nguCarouselDef="let item" class="item">
+                <div class="tile">{{ item.text }}</div>
+            </div>
+            <ul class="myPoint" NguCarouselPoint>
+                <li *ngFor="let j of carousel.pointNumbers; let i = index" [class.active]="i==carousel.activePoint"
+                    (click)="carousel.moveTo(i)" [style.background]="'url(' + testimonials[i] + ')'"></li>
+            </ul>
+        </ngu-carousel>
+    </div>
+</section>

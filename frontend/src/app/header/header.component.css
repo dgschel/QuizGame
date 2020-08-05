@@ -1,0 +1,124 @@
+.cover {
+    /* position: relative; */
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(to bottom, rgb(41, 128, 185), rgb(109, 213, 250), rgb(255, 255, 255)); */
+    background: url("/assets/images/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    height: 56px;
+    display: block;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+mat-toolbar {
+    background: transparent;
+    color: #fff;
+}
+
+.quiz-friends {
+    position: absolute;
+    max-width: 80%;
+    height: auto;
+    left: 10%; /* center */
+    top: 1%;
+    animation-name: slow-bounce;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    opacity: 0.25;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.play {
+    background-color: #307d2f;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+ul li {
+    margin-right: 10px;
+    font-size: 0.95rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.attention {
+    color: #fff;
+    text-align: center;
+    margin-top: 23%;
+    width: 80%;
+    margin: 23% auto;
+    /* height: calc(100vh - 10% - 18%); */
+    height: calc(100vh - 20%);
+}
+
+.scroll-down {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10%;
+}
+
+.scroll-down button {
+    -webkit-animation: pulse 1.25s ease-in-out infinite both;
+    animation: pulse 1.25s ease-in-out infinite both;
+    background-color: transparent;
+    color: #fff;
+}
+
+@keyframes slow-bounce {
+    from { margin-top: 0px;}
+    to { margin-top: 20px;}
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+  
